@@ -1,0 +1,12 @@
+
+:cachedir: '/var/cache/r10k'
+
+:sources:
+ puppet:
+    remote: http://{github url that contains puppetfile}.git
+    basedir: '/etc/puppet/environments'    
+    prefix: false #This defaults to false
+ hiera:
+    remote: http://{github url that contains yaml files}/hiera.git     
+    basedir: '/etc/puppet/hiera'
+    prefix: false
